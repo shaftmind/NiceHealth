@@ -7,7 +7,7 @@ namespace NiceHealth.Application.Services.Posto
 {
     public class PostoService : IPostoService
     {
-        public Task<Posto> AdicionarPosto(PostoModel postoModel)
+        public Task<PostoModel> AdicionarPosto(PostoModel postoModel)
         {
             throw new NotImplementedException();
         }
