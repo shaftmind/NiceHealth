@@ -5,9 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories\Endereco\" />
-    <Folder Include="Repositories\Posto\" />
-    <Folder Include="Scripts\" />
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.115.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NewNiceHealth.Domain\NewNiceHealth.Domain.csproj" />
   </ItemGroup>
 
 </Project>

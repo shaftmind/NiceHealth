@@ -1,15 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace NewNiceHealth.Domain.Repository
+﻿namespace NewNiceHealth.Domain.Repository
 {
     public class ScriptSql
     {
+        public ScriptSql(string script)
+        {
+            Query = script;
+        }
+
+        public ScriptSql(string script, object parametros) : this(script)
+        {
+            Parametros = parametros;
+        }
 
         public string Query { get; set; }
-        public object parametros { get; set; }
+        public object Parametros { get; set; }
     }
 }

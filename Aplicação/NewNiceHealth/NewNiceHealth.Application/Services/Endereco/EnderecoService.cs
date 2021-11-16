@@ -1,14 +1,24 @@
 ﻿using NewNiceHealth.Application.Models.Endereco;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NewNiceHealth.Application.Services.Endereco
 {
     public class EnderecoService : IEnderecoService
     {
+        private readonly IRepository<> _enderecoRepository;
+        private readonly IEnderecoQuery _enderecoQuery;
+        private readonly IEnderecoCommand _enderecoCommand;
+
+        public EnderecoService(IRepository<object> enderecoRepository, 
+            IEnderecoQuery enderecoQuery, 
+            IEnderecoCommand enderecoCommand)
+        {
+            _enderecoRepository = enderecoRepository;
+            _enderecoQuery = enderecoQuery;
+            _enderecoCommand = enderecoCommand;
+        }
+
         public EnderecoModel Alterar(EnderecoModel endereco)
         {
             throw new NotImplementedException();

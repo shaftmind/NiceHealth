@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace NewNiceHealth.Domain.Entities.Endereco
 {
-    public class Endereco
+    public class EnderecoEntity
     {
-        public Endereco()
+        public EnderecoEntity()
         {
         }
 
-        public Endereco(int id, string rua, string bairro, string cidade, long longetude, long latitude)
+        public EnderecoEntity(int id, string rua, string bairro, string cidade, string longitude, string latitude)
         {
             Id = id;
             Rua = rua;
             Bairro = bairro;
             Cidade = cidade;
-            Longetude = longetude;
+            Longitude = longitude;
             Latitude = latitude;
         }
 
@@ -26,8 +26,8 @@ namespace NewNiceHealth.Domain.Entities.Endereco
         public string Rua { get; set; }
         public string Bairro { get; set; }
         public string Cidade { get; set; }
-        public long Longetude { get; set; }
-        public long Latitude { get; set; }
+        public string Longitude { get; set; }
+        public string Latitude { get; set; }
 
     }
 }

@@ -24,7 +24,7 @@ namespace NewNiceHealth.Controllers
         [HttpGet]
         public async Task<IActionResult> ObterEnderecos()
         {
-            await _enderecoService
+            await  _enderecoService;
         }
 
         [HttpGet("/{EnderecoId}")]

@@ -1,35 +1,30 @@
 ﻿using NewNiceHealth.Application.Models.Endereco;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NewNiceHealth.Domain.Entities
 {
-    public class Posto
+    public class PostoEntity
     {
-        public Posto()
+        public PostoEntity()
         {
         }
 
-        public Posto(int id, string nome, EnderecoModel nomeEndereco, string responsavel, string telefone, int quantidadeDeTécnicos, int quantidadeDeLeitos)
+        public PostoEntity(int id, string nome, int enderecoId, string responsavel, string telefone, int quantidadeDeTecnicos, int quantidadeDeLeitos)
         {
             Id = id;
             Nome = nome;
-            NomeEndereco = nomeEndereco;
+            EnderecoId = enderecoId;
             Responsavel = responsavel;
             Telefone = telefone;
-            QuantidadeDeTécnicos = quantidadeDeTécnicos;
+            QuantidadeDeTecnicos = quantidadeDeTecnicos;
             QuantidadeDeLeitos = quantidadeDeLeitos;
         }
 
         public int Id { get; set; }
         public string Nome { get; set; }
-        public EnderecoModel NomeEndereco { get; set; }
+        public int EnderecoId { get; set; }
         public string Responsavel { get; set; }
         public string Telefone { get; set; }
-        public int QuantidadeDeTécnicos { get; set; }
+        public int QuantidadeDeTecnicos { get; set; }
         public int QuantidadeDeLeitos { get; set; }
     }
 }

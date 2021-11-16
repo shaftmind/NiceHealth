@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NewNiceHealth.Domain.Repository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +7,10 @@ using System.Threading.Tasks;
 
 namespace NewNiceHealth.Domain.Interfaces.Posto
 {
-    public interface IDeletarPostoQuery
+    public interface IPostoQuery
     {
-        string Executar();
+        ScriptSql ObterTodos();
+        ScriptSql ObterPorId(int id);
+
     }
 }
