@@ -1,4 +1,5 @@
-﻿using NewNiceHealth.Application.Models.Posto;
+﻿using AutoMapper;
+using NewNiceHealth.Application.Models.Posto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,10 @@ namespace NewNiceHealth.Application.Services.Posto
 {
     public class PostoService : IPostoService
     {
+
+        private readonly IRepository
+        private readonly IMapper _mapper;
+
         public PostoModel Alterar(PostoModel posto)
         {
             throw new NotImplementedException();
