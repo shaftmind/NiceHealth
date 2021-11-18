@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NewNiceHealth.Application.Models.Posto;
 using NewNiceHealth.Application.Services.Posto;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace NewNiceHealth.Controllers
 {
@@ -20,33 +18,33 @@ namespace NewNiceHealth.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> ObterTodos()
+        public IEnumerable<PostoModel> ObterTodos()
         {
-            await _postoService.ObterPostos();
+            return _postoService.ObterPostos();
         }
 
         [HttpGet("/{postoId}")]
-        public async Task<IActionResult> ObterPostoPorId()
+        public PostoModel ObterPostoPorId(int postoId)
         {
-            await _postoService.ObterPostoPorId(postoId);
+            return _postoService.ObterPorId(postoId);
         }
 
         [HttpPost]
-        public async Task<IActionResult> SalvarPosto()
+        public PostoModel SalvarPosto(PostoModel posto)
         {
-            await _postoService.Salvar();
+            return _postoService.Salvar(posto);
         }
 
         [HttpPut]
-        public async Task<IActionResult> AlterarPosto()
+        public PostoModel AlterarPosto(PostoModel posto)
         {
-            await _postoService.Alterar();
+            return _postoService.Alterar(posto);
         }
 
         [HttpDelete("/{postoId}")]
-        public async Task<IActionResult> DeletarPosto()
+        public void DeletarPosto(int postoId)
         {
-            await _postoService.Deletar();
+            _postoService.Deletar(postoId);
         }
 
 

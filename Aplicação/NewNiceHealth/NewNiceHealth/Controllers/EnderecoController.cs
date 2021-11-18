@@ -1,10 +1,7 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using NewNiceHealth.Application.Models.Endereco;
 using NewNiceHealth.Application.Services;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace NewNiceHealth.Controllers
 {
@@ -22,31 +19,31 @@ namespace NewNiceHealth.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> ObterEnderecos()
+        public IEnumerable<EnderecoModel> ObterEnderecos()
         {
-            await  _enderecoService;
+            return  _enderecoService.ObterEnderecos();
         }
 
-        [HttpGet("/{EnderecoId}")]
-        public async Task<IActionResult> ObterEnderecoPorId()
+        [HttpGet("/{enderecoId}")]
+        public EnderecoModel ObterEnderecoPorId(int enderecoId)
         {
-           await _enderecoService.ObterPostoPorId(enderecoId);
+           return _enderecoService.ObterPorId(enderecoId);
         }
 
         [HttpPost]
-        public async Task<IActionResult> CadastrarEndereco()
+        public EnderecoModel CadastrarEndereco(EnderecoModel endereco)
         {
-            _enderecoService.Salvar();
+            return _enderecoService.Salvar(endereco);
         }
 
         [HttpPut]
-        public async Task<IActionResult> AlterarEndereco()
+        public EnderecoModel AlterarEndereco(EnderecoModel endereco)
         {
-            _enderecoService.Alterar();
+            return _enderecoService.Alterar(endereco);
         }
 
         [HttpDelete("/{enderecoId}")]
-        public async Task<IActionResult> DeletarEndereco()
+        public void DeletarEndereco(int enderecoId)
         {
             _enderecoService.Deletar(enderecoId);
         }

@@ -1,6 +1,4 @@
-﻿using NewNiceHealth.Application.Models.Endereco;
-
-namespace NewNiceHealth.Domain.Entities
+﻿namespace NewNiceHealth.Domain.Entities
 {
     public class PostoEntity
     {

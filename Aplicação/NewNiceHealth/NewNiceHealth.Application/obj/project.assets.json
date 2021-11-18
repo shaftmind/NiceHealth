@@ -353,6 +353,19 @@
             "rid": "win"
           }
         }
+      },
+      "NewNiceHealth.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "System.Data.SQLite": "1.0.115.5"
+        },
+        "compile": {
+          "bin/placeholder/NewNiceHealth.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NewNiceHealth.Domain.dll": {}
+        }
       }
     }
   },
@@ -1241,11 +1254,17 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "NewNiceHealth.Domain/1.0.0": {
+      "type": "project",
+      "path": "../NewNiceHealth.Domain/NewNiceHealth.Domain.csproj",
+      "msbuildProject": "../NewNiceHealth.Domain/NewNiceHealth.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "AutoMapper >= 10.1.1",
+      "NewNiceHealth.Domain >= 1.0.0",
       "System.Data.SQLite >= 1.0.115.5"
     ]
   },
@@ -1275,7 +1294,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\adaias\\Desktop\\NiceHealth\\Aplicação\\NewNiceHealth\\NewNiceHealth.Domain\\NewNiceHealth.Domain.csproj": {
+              "projectPath": "C:\\Users\\adaias\\Desktop\\NiceHealth\\Aplicação\\NewNiceHealth\\NewNiceHealth.Domain\\NewNiceHealth.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

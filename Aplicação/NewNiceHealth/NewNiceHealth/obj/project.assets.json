@@ -433,6 +433,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "AutoMapper": "10.1.1",
+          "NewNiceHealth.Domain": "1.0.0",
           "System.Data.SQLite": "1.0.115.5"
         },
         "compile": {
@@ -440,6 +441,19 @@
         },
         "runtime": {
           "bin/placeholder/NewNiceHealth.Application.dll": {}
+        }
+      },
+      "NewNiceHealth.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "System.Data.SQLite": "1.0.115.5"
+        },
+        "compile": {
+          "bin/placeholder/NewNiceHealth.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NewNiceHealth.Domain.dll": {}
         }
       }
     }
@@ -1441,6 +1455,11 @@
       "type": "project",
       "path": "../NewNiceHealth.Application/NewNiceHealth.Application.csproj",
       "msbuildProject": "../NewNiceHealth.Application/NewNiceHealth.Application.csproj"
+    },
+    "NewNiceHealth.Domain/1.0.0": {
+      "type": "project",
+      "path": "../NewNiceHealth.Domain/NewNiceHealth.Domain.csproj",
+      "msbuildProject": "../NewNiceHealth.Domain/NewNiceHealth.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {

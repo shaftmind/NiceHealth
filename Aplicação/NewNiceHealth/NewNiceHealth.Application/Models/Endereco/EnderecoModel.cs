@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace NewNiceHealth.Application.Models.Endereco
+﻿namespace NewNiceHealth.Application.Models.Endereco
 {
     public class EnderecoModel
     {
@@ -12,8 +6,8 @@ namespace NewNiceHealth.Application.Models.Endereco
         public string Rua { get; set; }
         public string Bairro { get; set; }
         public string Cidade { get; set; }
-        public long Longetude { get; set; }
-        public long Latitude { get; set; }
+        public string Longitude { get; set; }
+        public string Latitude { get; set; }
 
 
     }

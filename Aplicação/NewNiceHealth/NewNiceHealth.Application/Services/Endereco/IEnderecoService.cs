@@ -14,7 +14,7 @@ namespace NewNiceHealth.Application.Services
         EnderecoModel ObterPorId(int id);
         EnderecoModel Salvar(EnderecoModel endereco);
         EnderecoModel Alterar(EnderecoModel endereco);
-        bool Deletar(int id);
+        void Deletar(int id);
 
     }
 }

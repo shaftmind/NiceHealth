@@ -1,7 +1,10 @@
 ﻿using AutoMapper;
 using NewNiceHealth.Application.Models.Endereco;
-using System;
+using NewNiceHealth.Domain.Entities.Endereco;
+using NewNiceHealth.Domain.Interfaces.Base;
+using NewNiceHealth.Domain.Interfaces.Endereco;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace NewNiceHealth.Application.Services.Endereco
 {
@@ -25,28 +28,78 @@ namespace NewNiceHealth.Application.Services.Endereco
 
         public EnderecoModel Alterar(EnderecoModel endereco)
         {
-            var registrar = _mapper.Map<EnderecoModel>(endereco);
-            _enderecoCommand.Alterar(endereco);
+            var registrar = _mapper.Map<EnderecoEntity>(endereco);
+            var command =_enderecoCommand.Editar(registrar.Id, registrar);
+            _enderecoRepository.ExecutarCommand(command);
+
+            return new EnderecoModel
+            {
+                Rua = registrar.Rua,
+                Bairro = registrar.Bairro,
+                Cidade = registrar.Cidade,
+                Longitude = registrar.Longitude,
+                Latitude = registrar.Latitude
+            };
         }
 
-        public bool Deletar(int id)
+        public void Deletar(int id)
         {
-            throw new NotImplementedException();
+            var command = _enderecoCommand.Remover(id);
+            _enderecoRepository.ExecutarCommand(command);
         }
 
         public IEnumerable<EnderecoModel> ObterEnderecos()
         {
-            throw new NotImplementedException();
+            var script = _enderecoQuery.ObterTodos();
+            var enderecos = _enderecoRepository.ExecutarQuery(script);
+
+            return enderecos.Select(e => new EnderecoModel
+            {
+                Id = e.Id,
+                Rua = e.Rua,
+                Bairro = e.Bairro,
+                Cidade = e.Cidade,
+                Longitude = e.Longitude,
+                Latitude = e.Latitude
+            });
+                
         }
 
         public EnderecoModel ObterPorId(int id)
         {
-            throw new NotImplementedException();
+            var script = _enderecoQuery.ObterPorId(id);
+            var enderecos = _enderecoRepository.ExecutarQuery(script)?.FirstOrDefault();
+
+            if(enderecos == null)
+            {
+
+            }
+
+            return new EnderecoModel
+            {
+                Id = enderecos.Id,
+                Rua = enderecos.Rua,
+                Bairro = enderecos.Bairro,
+                Cidade = enderecos.Cidade,
+                Longitude = enderecos.Longitude,
+                Latitude = enderecos.Latitude
+            };
         }
 
         public EnderecoModel Salvar(EnderecoModel endereco)
         {
-            throw new NotImplementedException();
+            var registrar = _mapper.Map<EnderecoEntity>(endereco);
+            var command = _enderecoCommand.Adicionar(registrar);
+            _enderecoRepository.ExecutarCommand(command);
+
+            return new EnderecoModel
+            {
+                Rua = registrar.Rua,
+                Bairro = registrar.Bairro,
+                Cidade = registrar.Cidade,
+                Longitude = registrar.Longitude,
+                Latitude = registrar.Latitude
+            };
         }
     }
 }

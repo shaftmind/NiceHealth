@@ -1,0 +1,6 @@
+C:\Users\adaias\Desktop\NiceHealth\Aplicação\NewNiceHealth\NewNiceHealth\obj\Debug\net5.0\NewNiceHealth.csprojAssemblyReference.cache
+C:\Users\adaias\Desktop\NiceHealth\Aplicação\NewNiceHealth\NewNiceHealth\obj\Debug\net5.0\NewNiceHealth.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adaias\Desktop\NiceHealth\Aplicação\NewNiceHealth\NewNiceHealth\obj\Debug\net5.0\NewNiceHealth.AssemblyInfoInputs.cache
+C:\Users\adaias\Desktop\NiceHealth\Aplicação\NewNiceHealth\NewNiceHealth\obj\Debug\net5.0\NewNiceHealth.AssemblyInfo.cs
+C:\Users\adaias\Desktop\NiceHealth\Aplicação\NewNiceHealth\NewNiceHealth\obj\Debug\net5.0\NewNiceHealth.csproj.CoreCompileInputs.cache
+C:\Users\adaias\Desktop\NiceHealth\Aplicação\NewNiceHealth\NewNiceHealth\obj\Debug\net5.0\NewNiceHealth.MvcApplicationPartsAssemblyInfo.cache
