@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NewNiceHealth.Application\NewNiceHealth.Application.csproj" />
+    <ProjectReference Include="..\NewNiceHealth.Infra.CrossCutting.IoC\NewNiceHealth.Infra.CrossCutting.IoC.csproj" />
   </ItemGroup>
 
 </Project>

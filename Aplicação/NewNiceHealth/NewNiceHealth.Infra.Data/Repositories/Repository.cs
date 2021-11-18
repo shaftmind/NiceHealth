@@ -6,7 +6,7 @@ using System.Data.SQLite;
 
 namespace NewNiceHealth.Infra.Data.Repositories.Endereco
 {
-    public class Repository : IRepository<T>
+    public class Repository<T> : IRepository<T>
     {
         public string ConnectionString { get; set; }
 
@@ -18,14 +18,14 @@ namespace NewNiceHealth.Infra.Data.Repositories.Endereco
         public void ExecutarCommand(ScriptSql script)
         {
             using var connection = new SQLiteConnection(ConnectionString);
-            connection.Execute(script.Query, script.parametros); 
+            connection.Execute(script.Query, script.Parametros); 
         }
 
         public IEnumerable<T> ExecutarQuery(ScriptSql script)
         {
             using var connection = new SQLiteConnection(ConnectionString);
 
-            var retorno = connection.Query<T>(script.Query, script.parametros);
+            var retorno = connection.Query<T>(script.Query, script.Parametros);
 
             return retorno;
 

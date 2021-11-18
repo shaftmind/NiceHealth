@@ -1,5 +1,5 @@
-﻿using NewNiceHealth.Domain.Repository;
-using NewNiceHealth.Domain.Entities;
+﻿using NewNiceHealth.Domain.Entities;
+using NewNiceHealth.Domain.Repository;
 
 namespace NewNiceHealth.Domain.Interfaces.Posto
 {
