@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gsmEmfUK8gpSlxaqEV5XfhcjDgzCWTp3K8krynOfFPoUV0SjEXmpQemNvAHlFAwVnExOQD0+kmgky/vFxmctTg==",
+  "dgSpecHash": "LWU/3F116e4b+VvohalinuaJn3JKumeDZLrLqALBwGploedqjoUejhdB99O6IsW4tVwJRo5umnUSlGBA9rt5pw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\adaias\\Desktop\\NiceHealth\\Aplicação\\NewNiceHealth\\NewNiceHealth.Domain\\NewNiceHealth.Domain.csproj",
+  "projectFilePath": "C:\\Users\\adaias\\Desktop\\Projetos\\NiceHealth\\Aplicação\\NewNiceHealth\\NewNiceHealth.Domain\\NewNiceHealth.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adaias\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\adaias\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

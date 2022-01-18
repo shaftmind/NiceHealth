@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adaias\\Desktop\\NiceHealth\\Aplicação\\NewNiceHealth\\NewNiceHealth.Domain\\NewNiceHealth.Domain.csproj": {}
+    "C:\\Users\\adaias\\Desktop\\Projetos\\NiceHealth\\Aplicação\\NewNiceHealth\\NewNiceHealth.Domain\\NewNiceHealth.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adaias\\Desktop\\NiceHealth\\Aplicação\\NewNiceHealth\\NewNiceHealth.Domain\\NewNiceHealth.Domain.csproj": {
+    "C:\\Users\\adaias\\Desktop\\Projetos\\NiceHealth\\Aplicação\\NewNiceHealth\\NewNiceHealth.Domain\\NewNiceHealth.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adaias\\Desktop\\NiceHealth\\Aplicação\\NewNiceHealth\\NewNiceHealth.Domain\\NewNiceHealth.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\adaias\\Desktop\\Projetos\\NiceHealth\\Aplicação\\NewNiceHealth\\NewNiceHealth.Domain\\NewNiceHealth.Domain.csproj",
         "projectName": "NewNiceHealth.Domain",
-        "projectPath": "C:\\Users\\adaias\\Desktop\\NiceHealth\\Aplicação\\NewNiceHealth\\NewNiceHealth.Domain\\NewNiceHealth.Domain.csproj",
+        "projectPath": "C:\\Users\\adaias\\Desktop\\Projetos\\NiceHealth\\Aplicação\\NewNiceHealth\\NewNiceHealth.Domain\\NewNiceHealth.Domain.csproj",
         "packagesPath": "C:\\Users\\adaias\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adaias\\Desktop\\NiceHealth\\Aplicação\\NewNiceHealth\\NewNiceHealth.Domain\\obj\\",
+        "outputPath": "C:\\Users\\adaias\\Desktop\\Projetos\\NiceHealth\\Aplicação\\NewNiceHealth\\NewNiceHealth.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\adaias\\AppData\\Roaming\\NuGet\\NuGet.Config",

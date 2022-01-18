@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ePg+3grCv7SyWfSvEIMvpZWc6pvFmjxO9jAB0inFILWZOoNLSYv7OB9wY7iW3izvvZCBqw0ZNM/WnbwHvZkbTg==",
+  "dgSpecHash": "4q0ccFEZWQE1d6fAe/y6GHqmrsHsXN1H7Zcfa9N1XR0ksQBnKLBiU2gAkMpRTgkGEgZFD8dS32Y1yvc7VFfaCQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\adaias\\Desktop\\NiceHealth\\Aplicação\\NewNiceHealth\\NewNiceHealth.Infra.CrossCutting.IoC\\NewNiceHealth.Infra.CrossCutting.IoC.csproj",
+  "projectFilePath": "C:\\Users\\adaias\\Desktop\\Projetos\\NiceHealth\\Aplicação\\NewNiceHealth\\NewNiceHealth.Infra.CrossCutting.IoC\\NewNiceHealth.Infra.CrossCutting.IoC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adaias\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\adaias\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",

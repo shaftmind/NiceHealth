@@ -8,7 +8,6 @@ namespace NewNiceHealth.Extensions
     public static class ServicesExtensions
     {
 
-
         public static void AddDependencyInjection(this IServiceCollection services, IConfiguration config)
         {
             ContainerIoC.RegisterContainerIoC(services);

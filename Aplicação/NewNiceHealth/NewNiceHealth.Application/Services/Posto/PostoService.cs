@@ -73,10 +73,10 @@ namespace NewNiceHealth.Application.Services.Posto
             var script = _postoQuery.ObterPorId(id);
             var posto = _repository.ExecutarQuery(script)?.FirstOrDefault();
 
-            if(posto == null)
-            {
+            //if(posto == null)
+            //{
 
-            }
+            //}
 
             return new PostoModel
             {

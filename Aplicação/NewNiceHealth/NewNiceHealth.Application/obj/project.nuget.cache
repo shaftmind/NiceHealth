@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UXPf2j8VBdyMTpy/+agwaZMRT6pgWTVpYOtlNUwk5aEZKqEWw1eWu1paanr/BLD9eibj16XNTwXimqJu5r841g==",
+  "dgSpecHash": "K6cRyHgULjGZ1xFRTXWopzilnIPd9zIolV1rHIwb4/XdS1EdV8HeZw5LdzpTWC32gUFevmN2/rxp8VKeLJL2qw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\adaias\\Desktop\\NiceHealth\\Aplicação\\NewNiceHealth\\NewNiceHealth.Application\\NewNiceHealth.Application.csproj",
+  "projectFilePath": "C:\\Users\\adaias\\Desktop\\Projetos\\NiceHealth\\Aplicação\\NewNiceHealth\\NewNiceHealth.Application\\NewNiceHealth.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adaias\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\adaias\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
