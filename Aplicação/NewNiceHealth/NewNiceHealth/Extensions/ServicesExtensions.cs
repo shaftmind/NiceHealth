@@ -13,9 +13,9 @@ namespace NewNiceHealth.Extensions
             ContainerIoC.RegisterContainerIoC(services);
         }
 
-        //public static void AddAutoMapperConfiguration(this IServiceCollection services)
-        //{
-        //    services.AddAutoMapper(typeof(MappingProfile));
-        //}
+        public static void AddAutoMapperConfiguration(this IServiceCollection services)
+        {
+            services.AddAutoMapper(typeof(MappingProfile));
+        }
     }
 }

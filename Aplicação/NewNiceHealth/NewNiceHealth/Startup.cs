@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using NewNiceHealth.Extensions;
+using System.Data.Entity;
 
 namespace NewNiceHealth
 {
@@ -36,7 +37,7 @@ namespace NewNiceHealth
             });
 
             services.AddDependencyInjection(Configuration);
-            //services.AddAutoMapper(typeof(Startup));
+            services.AddAutoMapperConfiguration();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -7,7 +7,9 @@ namespace NewNiceHealth.Controllers
 {
     [Controller]
     [Route("api/v1/postos")]
-    public class PostoController
+    [Produces("application/json")]
+    //[Authorize("acesso")]
+    public class PostoController : Controller
     {
 
         private readonly IPostoService _postoService;

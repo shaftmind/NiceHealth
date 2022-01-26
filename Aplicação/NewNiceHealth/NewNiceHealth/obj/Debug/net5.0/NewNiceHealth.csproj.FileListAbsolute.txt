@@ -114,3 +114,7 @@ C:\Users\adaias\Desktop\Projetos\NiceHealth\Aplicação\NewNiceHealth\NewNiceHea
 C:\Users\adaias\Desktop\Projetos\NiceHealth\Aplicação\NewNiceHealth\NewNiceHealth\obj\Debug\net5.0\ref\NewNiceHealth.dll
 C:\Users\adaias\Desktop\Projetos\NiceHealth\Aplicação\NewNiceHealth\NewNiceHealth\obj\Debug\net5.0\NewNiceHealth.pdb
 C:\Users\adaias\Desktop\Projetos\NiceHealth\Aplicação\NewNiceHealth\NewNiceHealth\obj\Debug\net5.0\NewNiceHealth.genruntimeconfig.cache
+C:\Users\adaias\Desktop\Projetos\NiceHealth\Aplicação\NewNiceHealth\NewNiceHealth\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\adaias\Desktop\Projetos\NiceHealth\Aplicação\NewNiceHealth\NewNiceHealth\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Users\adaias\Desktop\Projetos\NiceHealth\Aplicação\NewNiceHealth\NewNiceHealth\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\adaias\Desktop\Projetos\NiceHealth\Aplicação\NewNiceHealth\NewNiceHealth\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

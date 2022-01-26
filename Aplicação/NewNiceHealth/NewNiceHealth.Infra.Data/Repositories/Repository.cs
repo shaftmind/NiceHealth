@@ -12,7 +12,7 @@ namespace NewNiceHealth.Infra.Data.Repositories.Endereco
 
         public Repository()
         {
-            ConnectionString = "Data Source=C:\\Users\\adaias\\Desktop\\NiceHealth\\Aplicação\\NewNiceHealth\\NewNiceHealth\\db\\db_NiceHealth";
+            ConnectionString = "Data Source=C:\\Users\\adaias\\Desktop\\Projetos\\NiceHealth\\Aplicação\\NewNiceHealth\\NewNiceHealth\\db\\db_NiceHealth";
         }
 
         public void ExecutarCommand(ScriptSql script)
@@ -24,7 +24,6 @@ namespace NewNiceHealth.Infra.Data.Repositories.Endereco
         public IEnumerable<T> ExecutarQuery(ScriptSql script)
         {
             using var connection = new SQLiteConnection(ConnectionString);
-
             var retorno = connection.Query<T>(script.Query, script.Parametros);
 
             return retorno;
